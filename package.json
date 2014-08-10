@@ -1,0 +1,29 @@
+{
+  "name": "mongoose-custom-fields",
+  "version": "1.0.0",
+  "description": "Add dynamic fields to your Mongoose schemas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z43studio/mongoose-custom-fields/"
+  },
+  "keywords": [
+    "mongoose",
+    "nodejs",
+    "plugin",
+    "schema"
+  ],
+  "author": "z43 Studio",
+  "license": "Public Domain",
+  "dependencies": {
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.4",
+    "mongoose": "^3.8.14"
+  }
+}

@@ -12,9 +12,9 @@ var customFields = function(schema, options) {
 	schema.methods.customField = function(name, value) {
 		var property = _.findWhere(this._customFields, { name: name });
 
-		if (property && !value && value !== null) {
+		if (name && property && value === undefined) {
 			return property.value;
-		} else if (name && value) {
+		} else if (name && value != null) {
 			if (property) {
 				property.value = value;
 				// this.markModified('customFields');
@@ -23,6 +23,8 @@ var customFields = function(schema, options) {
 			}
 		} else if (name) {
 			this._customFields = _.without(this._customFields, property);
+		} else {
+			throw new Error("You cannot call this function with no arguments.");
 		}
 	}
 	schema.virtual('customKeys').get(function(){

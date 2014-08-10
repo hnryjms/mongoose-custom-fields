@@ -57,6 +57,28 @@ describe('mongoose-custom-fields', function() {
 			expect(object.customField('parent')).to.not.be.ok();
 			expect(object.customKeys).to.have.length(0);
 		});
+		it('should work for falsey values', function() {
+			var object = new MyModel();
+			
+			object.customField('comments', false);
+			
+			expect(object.customField('comments')).to.be(false);
+			expect(object.customKeys).to.have.length(1);
+			expect(object.customKeys[0]).to.be.eql('comments');
+		});
+		it('should remove falsey values', function() {
+			var object = new MyModel();
+						
+			object.customField('comments', false);
+						
+			expect(object.customField('comments')).to.be(false);
+			expect(object.customKeys).to.have.length(1);
+			
+			object.customField('comments', null);
+			
+			expect(object.customField('comments')).to.be(undefined);
+			expect(object.customKeys).to.have.length(0);
+		});
 	});
 	
 	describe('customKeys', function() {

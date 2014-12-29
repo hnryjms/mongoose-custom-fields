@@ -1,6 +1,6 @@
 {
   "name": "mongoose-custom-fields",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add dynamic fields to your Mongoose schemas.",
   "main": "index.js",
   "scripts": {

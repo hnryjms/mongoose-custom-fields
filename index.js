@@ -5,7 +5,7 @@ var _ = require('underscore');
 var customFields = function(schema, options) {
 	schema.add({
 		_customFields: [ {
-			name: { type: String, unique: true },
+			name: { type: String },
 			value: { type: {} } 
 		} ]
 	});

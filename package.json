@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/z43studio/mongoose-custom-fields/"
+    "url": "https://github.com/hnryjms/mongoose-custom-fields/"
   },
   "keywords": [
     "mongoose",
@@ -16,17 +16,17 @@
     "plugin",
     "schema"
   ],
-  "author": "z43 Studio <hello@z43studio.com>",
+  "author": "Hank Brekke <brekkehj@hnryjms.io>",
   "license": {
     "type": "Public Domain",
-    "url": "https://github.com/z43studio/mongoose-custom-fields/blob/master/LICENSE"
+    "url": "https://github.com/hnryjms/mongoose-custom-fields/blob/master/LICENSE"
   },
   "dependencies": {
     "underscore": "^1.6.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^1.21.4",
-    "mongoose": "^3.8.14"
+    "mocha": "^2.4.5",
+    "mongoose": "^4.4.13"
   }
 }

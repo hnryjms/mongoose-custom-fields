@@ -1,6 +1,6 @@
 # mongoose-custom-fields
 
-Dynamically extend your [Mongoose.js](http://mongoosejs.com/) schemas with unstructured custom fields.
+Dynamically extend your [Mongoose.js](https://mongoosejs.com/) schemas with unstructured custom fields.
 
 ## Installation
 
@@ -74,7 +74,7 @@ Post.findById(req.query.id, function(err, post) {
 
 ## Testing
 
-We use the [mocha](http://mochajs.org/) testing framework. To run tests, first install the module with development dependencies.
+We use the [mocha](https://mochajs.org/) testing framework. To run tests, first install the module with development dependencies.
 
 	$ npm install
 
